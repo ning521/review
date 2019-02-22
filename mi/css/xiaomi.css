@@ -993,6 +993,12 @@ a{
     box-sizing: content-box;
     text-align: center;
     position: relative;
+    transition: all 0.8s;
+    top:0;
+}
+.content-list-one:hover{
+    box-shadow: 0 5px 15px #ccc;
+    top:-5px;
 }
 .content-list-one:hover .book-left-box{
     display: initial;
@@ -1175,28 +1181,28 @@ a{
     float: left;
     box-sizing: border-box;
     line-height: 80px;
+    font-size: 16px;
 }
 .service-list-item a{
     display: block;
     width: 245px;
     height: 30px;
     color:#616161;
-    font-size: 16px;
     line-height: 30px;
     text-align: center;
     border-right:1px solid #b0b0b0;
     margin-top: 25px;
 }
+.i{
+    font-size: 25px;
+    margin-right: 5px;
+}
 .a4{
     list-style: none;
 }
-.service-list-item :hover{
+.service-list-item a:hover{
     font-size:16px;
     color: #ff6700;
-}
-.service-list-item i{
-    font-size: 16px;
-    color:#757575;
 }
 /*小米首页底部导航栏结束*/
 .footer-links{
@@ -1272,6 +1278,15 @@ a{
 .kefu i{
     color:#ff6700;
 }
+.kefu:hover{
+    background: #ff6700;
+}
+.kefu:hover i{
+    color: #fff;
+}
+.kefu:hover a{
+    color: #fff;
+}
 /*小米首页底部链接结束*/
 .footer-bottom-box{
     width:1226px;
@@ -1318,8 +1333,8 @@ a{
     height: 75px;
 }
 .list-text2 a{
- font-size: 12px;
- color: #b0b0b0;
+    font-size: 12px;
+    color: #b0b0b0;
     margin: 1px 1px;
     text-decoration:none;
 }
